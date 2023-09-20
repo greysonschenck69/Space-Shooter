@@ -12,11 +12,11 @@ var veloctiy = Vector2.ZERO
 func _ready():
 	veloctiy = Vector2(0,-speed).rotated(rotation)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	position = position + veloctiy
 
 
-func _on_body_entered(body):
+func _on_body_entered(_body):
 	queue_free()
 
 
