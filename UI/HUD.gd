@@ -14,6 +14,8 @@ func update_score():
 
 func update_time():
 	$Time.text = "Time: " + str(Global.time)
+	
+
 
 func update_lives():
 	lives_pos = Vector2(20, Global.VP.y - 20)

@@ -27,8 +27,7 @@ func _physics_process(_delta):
 	velocity += get_input()*speed
 	velocity = velocity.normalized() * clamp(velocity.length(), 0, max_speed)
 	
-	position.x = wrapf(position.x, 0.0, Global.VP.x)
-	position.y = wrapf(position.y, 0.0, Global.VP.y)
+
 	velocity = velocity.normalized() * clamp(velocity.length(), 0, max_speed)
 	
 	move_and_slide()
